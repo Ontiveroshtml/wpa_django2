@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 150px; /* Ancho de cada imagen */
+    height: 150px; /* Alto de cada imagen */
+    object-fit: cover; /* Mantener las proporciones recortando */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un toque 3D */
+    transition: transform 0.2s; /* Animación al hacer hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Efecto de zoom cuando se pasa el ratón por encima */
+}

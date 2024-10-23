@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="manifest" href="{% url 'manifest' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>navigator.serviceWorker.register("serviceworker.js");</script>
+</head>
+<body>
+    <div>Hola Mundo</div>
+    <h1>Imágenes cacheadas</h1>
+    <div class="gallery">
+        <img src="{% static '1.jpg' %}" alt="Imagen 1">
+        <img src="{% static '2.jpg' %}" alt="Imagen 2">
+        <img src="{% static '3.jpg' %}" alt="Imagen 3">
+        <img src="{% static '4.jpg' %}" alt="Imagen 4">
+        <img src="{% static '5.jpg' %}" alt="Imagen 5">
+    </div>
+</body>
+</html>
